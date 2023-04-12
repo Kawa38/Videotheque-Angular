@@ -1,0 +1,14 @@
+
+<!-- <img src="../../assets/img/home/pexels-kyle-loftus-3379942.jpg" alt="Fond écran représentant le cinema"
+class="img-fluid maxwidth:100% height:auto"> -->
+
+<!-- <style>
+  body {
+    background-image: url('../../assets/img/home/pexels-kyle-loftus-3379942.jpg');
+  }
+  </style> -->
+
+<section class="d-flex flex-row flex-wrap mb-3 justify-content-between">
+  <app-liste-films *ngFor="let film of listeFilms" [instanceFilm]="film">
+  </app-liste-films>
+</section>

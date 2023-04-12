@@ -1,13 +1,12 @@
-<!-- On affiche le contenu de nos variables dans le template ou vue grâce au {{ String Interpolation }} -->
-<h2>{{instanceFilm.titre}}</h2>
-<p>{{instanceFilm.realisateur}}</p>
-<p>{{instanceFilm.description}}</p>
-<p>{{instanceFilm.dureeTotale}} minutes</p>
-<p>{{instanceFilm.dureeVisionnee}} minutes</p>
-<!-- Techniquement notre manière d'appeler les valeurs des attributs est correcte.
-Il peut arriver que les valeurs de ces attributs ne soient pas forcément des string.
-Nous allons préférer une syntaxe unique [] -->
-<!-- <img src="{{imgUrl}}" alt="{{titre}}"/> -->
-<!-- Nous allons donc écrire : -->
-<img [src]="instanceFilm.imgUrl" [alt]="instanceFilm.titre" />
-<!-- L'attribut binding lié la valeur d'une propriété à l'attribut d'une balise HTML en utilisant les crochets [] -->
+
+<div class="card flex align-items-center" style="width: 18rem; height:100%" >
+    <div class="card-body">
+        <h2 class="card-title">{{instanceFilm.titre}}</h2>
+        <p class="card-text">{{instanceFilm.realisateur}}</p>
+        <p class="card-text">{{instanceFilm.description}}</p>
+        <p class="card-text">{{instanceFilm.dureeTotale}} minutes</p>
+        <p class="card-text">{{instanceFilm.dureeVisionnee}} minutes</p>
+    </div>
+    <img [src]="instanceFilm.imgUrl" [alt]="instanceFilm.titre" class="card-img-bottom" width="100%" height="180"/>
+</div>
+

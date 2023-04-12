@@ -1,0 +1,12 @@
+nav a {
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration : underline;
+}
+
+.active{
+    color:brown
+}
